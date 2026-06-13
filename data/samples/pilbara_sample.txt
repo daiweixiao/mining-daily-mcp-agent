@@ -1,0 +1,7 @@
+Mineral Resource Estimate table excerpt.
+
+Indicated 85.2 Mt 1.23 % Li2O 1.05 Mt Li2O
+Inferred 42.7 Mt 1.08 % Li2O 0.46 Mt Li2O
+
+This sample text is used only to verify fallback text extraction.
+

@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "mining-news-mcp": {
+      "command": "D:/Anaconda3/python.exe",
+      "args": ["-m", "servers.mining_news_mcp.server"],
+      "cwd": "C:/Users/26210/Desktop/简历/凌云智矿/mining-daily-mcp-agent",
+      "env": {
+        "PYTHONPATH": "C:/Users/26210/Desktop/简历/凌云智矿/mining-daily-mcp-agent",
+        "DATA_DIR": "C:/Users/26210/Desktop/简历/凌云智矿/mining-daily-mcp-agent/data/fixtures",
+        "LIVE_MODE": "false",
+        "NEWS_MODE": "fixture",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "mineral-pdf-mcp": {
+      "command": "D:/Anaconda3/python.exe",
+      "args": ["-m", "servers.mineral_pdf_mcp.server"],
+      "cwd": "C:/Users/26210/Desktop/简历/凌云智矿/mining-daily-mcp-agent",
+      "env": {
+        "PYTHONPATH": "C:/Users/26210/Desktop/简历/凌云智矿/mining-daily-mcp-agent",
+        "DATA_DIR": "C:/Users/26210/Desktop/简历/凌云智矿/mining-daily-mcp-agent/data/fixtures",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "lme-price-mcp": {
+      "command": "D:/Anaconda3/python.exe",
+      "args": ["-m", "servers.lme_price_mcp.server"],
+      "cwd": "C:/Users/26210/Desktop/简历/凌云智矿/mining-daily-mcp-agent",
+      "env": {
+        "PYTHONPATH": "C:/Users/26210/Desktop/简历/凌云智矿/mining-daily-mcp-agent",
+        "DATA_DIR": "C:/Users/26210/Desktop/简历/凌云智矿/mining-daily-mcp-agent/data/fixtures",
+        "LIVE_MODE": "false",
+        "PRICE_MODE": "fixture",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

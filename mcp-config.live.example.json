@@ -1,0 +1,37 @@
+{
+  "mcpServers": {
+    "mining-news-mcp": {
+      "command": "python",
+      "args": ["-m", "servers.mining_news_mcp.server"],
+      "env": {
+        "DATA_DIR": "data/fixtures",
+        "LIVE_MODE": "true",
+        "NEWS_MODE": "auto",
+        "NEWS_RSS_URLS": "https://www.mining.com/feed/,https://your-spglobal-rss-url.example/feed.xml",
+        "HTTP_TIMEOUT_SECONDS": "12",
+        "HTTP_RETRIES": "2"
+      }
+    },
+    "mineral-pdf-mcp": {
+      "command": "python",
+      "args": ["-m", "servers.mineral_pdf_mcp.server"],
+      "env": {
+        "DATA_DIR": "data/fixtures",
+        "RESOURCE_PDF_URL": "https://example.com/path/to/ni-43-101.pdf",
+        "HTTP_TIMEOUT_SECONDS": "20",
+        "HTTP_RETRIES": "2"
+      }
+    },
+    "lme-price-mcp": {
+      "command": "python",
+      "args": ["-m", "servers.lme_price_mcp.server"],
+      "env": {
+        "DATA_DIR": "data/fixtures",
+        "PRICE_MODE": "auto",
+        "PRICE_CSV_PATH": "C:/path/to/authorized-prices.csv",
+        "PRICE_API_URL": "https://price-api.example.com/prices?commodity={commodity}&date={date}&days={days}"
+      }
+    }
+  }
+}
+

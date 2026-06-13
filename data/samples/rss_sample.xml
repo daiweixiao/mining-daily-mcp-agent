@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Mining Sample Feed</title>
+    <item>
+      <title>Pilbara lithium export policy and operations update</title>
+      <link>file://__ARTICLE_PATH__</link>
+      <pubDate>Fri, 12 Jun 2026 08:00:00 GMT</pubDate>
+      <description>Pilbara lithium operators watch export policy, shipping schedules, and spodumene contract resets.</description>
+    </item>
+  </channel>
+</rss>
+

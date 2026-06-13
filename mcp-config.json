@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "mining-news-mcp": {
+      "command": "python",
+      "args": ["-m", "servers.mining_news_mcp.server"],
+      "env": {
+        "DATA_DIR": "data/fixtures"
+      }
+    },
+    "mineral-pdf-mcp": {
+      "command": "python",
+      "args": ["-m", "servers.mineral_pdf_mcp.server"],
+      "env": {
+        "DATA_DIR": "data/fixtures"
+      }
+    },
+    "lme-price-mcp": {
+      "command": "python",
+      "args": ["-m", "servers.lme_price_mcp.server"],
+      "env": {
+        "DATA_DIR": "data/fixtures"
+      }
+    }
+  }
+}
+

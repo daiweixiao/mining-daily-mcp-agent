@@ -1,0 +1,21 @@
+name: mining-daily-agent
+
+services:
+  mining-daily-agent:
+    build: .
+    environment:
+      DATA_DIR: /app/data/fixtures
+      AGENT_TRANSPORT: mcp
+    command: ["python", "-m", "agent.cli", "--transport", "mcp", "给我生成一份关于Pilbara锂矿的今日简报"]
+
+  mining-daily-agent-live:
+    profiles: ["live"]
+    build: .
+    environment:
+      DATA_DIR: /app/data/fixtures
+      AGENT_TRANSPORT: mcp
+      LIVE_MODE: "true"
+      NEWS_MODE: auto
+      HTTP_TIMEOUT_SECONDS: "8"
+      HTTP_RETRIES: "1"
+    command: ["python", "-m", "agent.cli", "--transport", "mcp", "给我生成一份关于Pilbara锂矿的今日简报"]
